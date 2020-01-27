@@ -1,0 +1,91 @@
+<!--
+    Web 322: Assignment 1
+    Student: Leonel Said Ruiz Navarrete
+    ID: 104657184
+    Email: lruiz-navarrete@myseneca.ca
+-->
+{{!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>airbnb - Room Listing </title>
+    <link rel="stylesheet" href="/css/room.css">
+    
+</head>
+    
+
+<body>
+
+<div class="imagesR" onclick="onRoomClicked("{{_id}}")">
+
+<div class="img1">
+<img class="r1" src="https://christchurch.crowneplaza.com/wp-content/uploads/sites/10/2017/03/Deluxe-Room.jpg" alt="room1" width="200" >
+    <div class="t1"><t3>Entire Apartment Toronto</t3><br><t3> $567 CAD/night</t3></div>> 
+</div>
+
+<div class="img2">
+<img class="r2" src="https://www.crescentcourt.com/wp-content/uploads/2018/03/suitelife.jpg" alt="room2" width="200" >
+<div class="t2"><t3>Bright, clean Apartment - Toronto</t3><br><t3> $237 CAD/night</t3></div>>
+</div>
+
+<div class="img3">
+<img class="r3" src="https://s7d2.scene7.com/is/image/ritzcarlton/RCTORON_00094_conversion?$XlargeViewport100pct$" alt="room3" width="200" >
+<div class="t3"><t3>Private Room - Toronto</t3><br><t3> $456 CAD/night</t3></div>>
+</div>
+
+<div class="img4">
+<img class="r4" src="https://cdn.japantimes.2xx.jp/wp-content/uploads/2017/12/p11-hotels-a-20171215-870x580.jpg" alt="room4" width="200" >
+<div class="t4"><t3>Cozy Apartment - Toronto</t3><br><t3> $333 CAD/night</t3></div>>
+</div>
+
+<div class="img5">
+<img class="r5" src="https://media.hotels.nl/r/s2/rooms/source/17064-1.jpg?cachebuster=1565180482" alt="room5" width="200" > 
+<div class="t5"><t3>Large Luxury Condo - Toronto</t3><br><t3> $876 CAD/night</t3></div>>
+</div>
+
+<div class="img6">
+<img class="r6" src="https://i.ytimg.com/vi/09pDca1mITM/maxresdefault.jpg" alt="room6" width="200" >  
+<div class="t6"><t3>Authentic Fancy Room - Toronto</t3><br><t3> $789 CAD/night</t3></div>>
+</div>
+
+ </div>   
+
+</body>
+</html> --}}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>airbnb - Room Listing </title>
+    <link rel="stylesheet" href="/css/room.css">
+    
+</head>
+    
+
+<body>
+
+<div class="imagesR">
+    <br><br><br><br><br><br><br><br><br><br>
+        {{#each roomList}}
+          
+                {{#if roomImage}}
+                  <a href="/room/{{roomImage}}">
+                <img src="/room/{{roomImage}}" width="600" height="250">
+                </a>
+                {{/if}}
+                <div class="Room">
+                    <p class="title">{{title}}</p>
+                    <p class="description">{{description}}</p>
+                    <p class="price">$ {{price}} /night</p>
+                    <p class="location">Location: {{location}}</p>
+                </div>
+                
+         
+        {{else}}
+            <h3>No Rooms</h3>
+        {{/each}}
+    </div>
+    </body>
+</html> 

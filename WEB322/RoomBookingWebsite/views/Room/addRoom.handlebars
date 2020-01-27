@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>airbnb - Room Listing </title>
+    <link rel="stylesheet" href="/css/addRoom.css">
+    
+</head>
+    
+
+<body>
+    
+<form  method="POST" action="/addRoom" enctype="multipart/form-data">
+<div class="addRoom">
+<h1>Add Room</h1>
+
+    <fieldset>
+        <label for="roomImage">Room Images: </label><br />
+        <input type="file" name="roomImage" id="roomImage"/>
+    </fieldset>
+
+    <div id="title">
+        <input type="text" placeholder="Title" id="title" name="title">
+    </div>
+
+    <div id="price">
+        <input type="number" placeholder="Price" id="price" name="price">
+    </div>
+
+    <div id="description">
+        <textarea type="number" placeholder="Description" id="description" name="description"></textarea>
+    </div>
+
+     <div id="location">
+     <select placeholder="Location" id = "location" name = "location" >
+            <option value="Toronto" selected>Toronto</option>
+            <option value="Montreal">Montreal</option>
+            <option value="Vancouver">Vancouver</option>
+            <option value="Ottawa">Ottawa</option>
+     </select> 
+    </div>
+
+    <button type="submit" id="addButton">Add Room</button>
+
+    </div>
+
+    <div class="errors2">
+  {{#each message}}
+    <div class="errors">{{this}}</div>
+{{/each}}
+</div>
+</form>
+
+</body>
+</html>

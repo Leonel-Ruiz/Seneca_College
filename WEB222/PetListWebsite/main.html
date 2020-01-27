@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en-US">
+       
+    <head>
+        <title>~A4 Pets~</title>
+        <link rel="stylesheet" href="css/normalize.css" />
+        <link rel="stylesheet" href="css/assignment4-theme.css" />
+        <link rel="stylesheet" href="css/a4-main.css" />
+        <script src="js/data.js"></script>
+        <script src="js/a4-main.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="center">
+                <h1 class="app-title">
+                    ~Perfect Pets~
+                </h1>
+            </div>
+        </header>
+        <nav>
+            <div class="center">
+                <ul>
+                    <li><a onclick="console.log('All Pets');filterAllPets();">All Pets</a></li>
+                    <li><span>|</span></li>
+                    <li><a onclick="console.log('Only Dogs');filterDog();">Dogs</a></li>
+                    <li><a onclick="console.log('Only Cats');filterCat();">Cats</a></li>
+                    <li><a onclick="console.log('Only Birds');filterBird();">Birds</a></li>
+                    <li><span>|</span></li>
+                    <li><a onclick="console.log('Pets < 1 year');filter_zero_1();">&lt; 1 year</a></li>
+                    <li><a onclick="console.log('Pets from 1 to 3 years');filter_1_3();">1 - 3 years</a></li>
+                    <li><a onclick="console.log('Pets >= 4 years');filter_4_plus();">4+ years</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <section class="main center">
+            <table class="main-table-top">
+                <tbody>
+                    <tr>
+                        <th>Photo</th>
+                        <th>Description</th>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="main-table-container">
+                <table class="main-table">
+                    <tbody id="main-table-body">
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <footer>
+            <div class="center">
+                &copy; 2019 Leonel Said Ruiz Navarrete
+            </div>
+        </footer>
+    </body>
+</html>
+
+

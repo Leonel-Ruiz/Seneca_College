@@ -1,0 +1,77 @@
+<!--
+    Web 322: Assignment 1
+    Student: Leonel Said Ruiz Navarrete
+    ID: 104657184
+    Email: lruiz-navarrete@myseneca.ca
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>airbnb - HOME</title>
+    <link rel="stylesheet" href="css/home.css">
+</head>
+  
+<body>
+
+<form method="POST" action="/home" >
+
+  <div class="searchPlaces">
+
+    <h1>Book amazing places to stay around the world.</h1>
+    
+    <div id="whereD">
+    <label><b> WHERE </b></label>
+    <select placeholder="Anywhere" id = "where" >
+               <option value = "Toronto">Toronto</option>
+               <option value = "Montreal">Montreal</option>
+               <option value = "Vancouver">Vancouver</option>
+               <option value = "Ottawa">Ottawa</option>
+             </select>
+    </div>
+
+    <div id="check-inD">
+    <label><b> CHECK-IN </b></label>
+    <input type="date" placeholder="mm/dd/yyyy" id="check-in">
+    </div>
+
+    <div id="checkoutD">
+    <label><b> CHECKOUT </b></label>
+    <input type="date" placeholder="mm/dd/yyyy" id="checkout">
+    </div>
+
+    <div id="guestsD">
+    <label><b> GUESTS </b></label>
+    <input type="number" placeholder="Guests" id="guests">
+    </div>
+    
+    <button type="submit" id="search">Search</button>
+    
+  </div>
+</form>
+
+<div class="infoSection">
+
+<div class="text">
+  <p1><font size="5">Wherever you decide to go, find a place like home with Leo Travels.</font></p1><br>
+  <p1><font size="3"> At Leo Travels we believe that traveling around the world is an amazing experience and it should be as authentic and comfortable as posible. With inovative technology we encourage people to explore the world in an innovate way.</font></p1>
+</div>
+
+<div class="collage">
+ <img src="img/collage.png" alt="banner1" style="width:100%">
+</div>
+
+<div class="video">
+<p1><a href="/">Look at our video about Leo Travels</a></p1>
+</div>
+
+</div>
+
+<div class="prom-banners">
+ <img src="img/promotionalBanner.png" alt="banner1" style="width:100%">
+</div>
+
+</body>
+
+</html>

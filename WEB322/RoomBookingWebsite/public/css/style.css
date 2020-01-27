@@ -1,0 +1,57 @@
+ /*
+    Web 322: Assignment 1
+    Student: Leonel Said Ruiz Navarrete
+    ID: 104657184
+    Email: lruiz-navarrete@myseneca.ca
+  */
+
+body
+{
+    background-image: url(../img/niagara2.png);
+    /*background-size: 2016px 1512px;*/
+    background-size:cover;
+}
+
+a
+{
+    color: white;
+    padding: 2%;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+footer
+{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-top:10px;
+    padding-bottom: 10px;
+    background-color: #FF6F6d;
+    color: white;
+    text-align: center;
+}
+
+header
+{
+    position: fixed;
+    top:0;
+    width: 100%;
+    padding-top:10px;
+    padding-bottom: 10px;
+    background-color:#FF6F6d;
+    color: white;
+    text-align: center;
+}
+
+h6{
+    color: black;
+}
+
+
+
+
+
+
+

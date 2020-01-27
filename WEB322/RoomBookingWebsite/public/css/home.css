@@ -1,0 +1,70 @@
+  /*
+    Web 322: Assignment 1
+    Student: Leonel Said Ruiz Navarrete
+    ID: 104657184
+    Email: lruiz-navarrete@myseneca.ca
+  */
+
+  /* Sets padding to the form*/
+  .searchPlaces {
+    padding: 20px;
+  }
+
+  /* It adds padding to the form fields*/
+  #whereD,#check-inD,#checkoutD,#guestsD
+  {
+      padding-bottom: 15px;
+  }
+  
+ /* sets structure for form box*/
+ .searchPlaces {
+    background-color: #fefefe;
+    margin: 180px 60px 80px 30px;
+    border: 2px solid #888;
+    width: 50%;
+  }
+
+  /*Sets width of each form field to 100% */
+  #where,#check-in,#checkout,#guests
+  {
+      width:100%;
+  }
+
+  /* Styles Search botton background*/
+  #search {
+    padding: 14px 20px;
+    background-color: #FF6F6d;
+  }
+
+ /* Sets search botton font to white*/
+  button
+  {
+      color: white;
+  }
+
+  .searchPlaces 
+  {
+    float:left;
+	clear:left;
+  }
+
+  .infoSection
+  {
+    float:left;
+    margin: 180px 60px 80px 30px;
+    border: 2px solid #888;
+    width: 30%;
+    background-color: #FF6F6d;
+  }
+
+  .text p1
+  {
+    color: white;
+  }
+
+  .prom-banners
+  {
+    margin: 1% 1% 3% 1%;
+  }
+
+  

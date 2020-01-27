@@ -1,0 +1,73 @@
+/* Place all of your CSS Code in this file */
+
+/********************************************************************************* 
+*
+* WEB222 – Assignment #4a
+*
+* I declare that this assignment is my own work in accordance with Seneca 
+* Academic Policy. No part of this assignment has been copied manually or 
+* electronically from any other source (including web sites) or distributed to 
+* other students. 
+* 
+* Name: Leonel Said Ruiz Navarrete   Student ID: 104657184  Date: July 17th,2019
+* 
+********************************************************************************/
+body
+{
+    color: gray;
+}
+
+nav,footer
+{
+    background-color: lightseagreen;
+}
+
+header
+{
+    border-style: ridge;
+    border-color: black;
+    border-width: 5px;
+}
+@font-face {
+    font-family: fontL;
+    src: url(sansation_light.woff);
+ }
+ 
+ 
+.app-title
+{
+    font-family: fontL;
+    color:maroon;
+}
+
+.main-table-container
+{
+    max-height: 400px;
+    background-color: lightblue;
+    height: 400px;
+    width: auto;  
+    overflow-y: scroll;
+}
+
+.main-table-top
+{
+    border-style: ridge;
+    border-color: black;
+    border-width: 5px;
+    background-color: white;
+}
+
+.main-table
+{
+    border-style: outset;
+    border-color: black;
+    border-width: 6px;
+    background-color: white;
+}
+
+span
+{
+    background-color: #fff2ac;
+    background-image: linear-gradient(to right, #ffe359 0%, #fff2ac 100%);
+    text-decoration: underline overline;
+}
